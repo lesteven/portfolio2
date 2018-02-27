@@ -1,6 +1,6 @@
 import {createStore, applyMiddleware, combineReducers,compose} from 'redux';
 import thunk from 'redux-thunk';
-import view from './reduxModules/screenSizeModule';
+import view from './reduxModules/viewModule';
 
 
 const reducers = combineReducers({

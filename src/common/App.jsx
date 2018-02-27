@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
-import { update } from './reduxModules/screenSizeModule';
+import { updateScreenSize } from './reduxModules/viewModule';
 import NavBar from './views/navBar/NavBar.jsx';
 import routesOptions from './routes.js';
 import { Route, Link, Switch, withRouter } from 'react-router-dom';
@@ -39,7 +39,7 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        getScreenSize:(size) => dispatch(update(size))
+        getScreenSize:(size) => dispatch(updateScreenSize(size))
     }
 }
 
