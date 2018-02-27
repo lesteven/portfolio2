@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
-import { update } from './reduxModules/viewModule';
+import { update } from './reduxModules/screenSizeModule';
 import NavBar from './views/navBar/NavBar.jsx';
 import routesOptions from './routes.js';
 import { Route, Link, Switch, withRouter } from 'react-router-dom';
@@ -9,9 +9,12 @@ import { Route, Link, Switch, withRouter } from 'react-router-dom';
 
 
 class App extends Component {
-    hello = () => {
-        console.log('hello from react!');
-
+    getScreenSize = () => {
+        const { getScreenSize } = this.props;
+        getScreenSize(window.innerWidth);
+    }
+    componentDidMount() {
+        window.addEventListener('resize', this.getScreenSize); 
     }
     render() {
         const reactRoutes = routesOptions.routes.map (e =>
@@ -36,7 +39,7 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        addOne:() => dispatch(update())
+        getScreenSize:(size) => dispatch(update(size))
     }
 }
 

@@ -1,4 +1,4 @@
-const updateView = 'app/screenSize/UPDATE_SCREEN_SIZE';
+const updateView = 'app/view/UPDATE_VIEW';
 
 // action creator
 export const update = (size) => {

@@ -28,7 +28,7 @@ function handleRender(req,res)  {
 
     let context = {};
 
-    console.log(context); 
+//    console.log(context); 
     // render component to string
     const html = renderToString(
         <Provider store = {store}>
@@ -38,7 +38,7 @@ function handleRender(req,res)  {
         </Provider>
     )
     
-    console.log(context); 
+  //  console.log(context); 
     // get redux state
     const finalState = store.getState();
 
