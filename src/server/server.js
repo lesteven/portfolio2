@@ -7,6 +7,14 @@ const app = express();
 app.use(morgan('dev'));
 const port = process.env.PORT || 3000;
 
+// for parsing urlencoded in req.body
+app.use(bodyParser.urlencoded({
+    extended:true
+}));
+
+// for parsing json in req.body
+app.use(bodyParser.json());
+
 // get gzip files
 app.get('*.js', function (req, res, next) {
   req.url = req.url + '.gz';
@@ -19,9 +27,12 @@ app.get('*.js', function (req, res, next) {
 app.use(express.static('dist'));
 
 // routers
-app.get('/hello', function(req,res) {
-    res.send("hello server!");
-})
+import screenRouter from './routes/screenRouter';
+
+// client api
+app.use('/screen', screenRouter);
+
+
 
 // react server side
 import { handleRender } from './ssrFunctions.js';

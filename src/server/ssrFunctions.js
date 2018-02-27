@@ -13,10 +13,13 @@ function handleRender(req,res)  {
     // create store
     const store = configureStore();
 
+    const url = 'http://localhost:3000/screen'; 
+
+//    console.log(store);
     // react router setup
     let foundPath = null;
 
-    console.log(req.url);
+//    console.log(req.url);
 
     // grab path that matches with req.url along with component    
     let { path, component } = routeOptions.routes.find (
@@ -25,7 +28,7 @@ function handleRender(req,res)  {
             return foundPath;
         }) || {};
 
-
+//    console.log('foundPath', foundPath);
     let context = {};
 
 //    console.log(context); 
