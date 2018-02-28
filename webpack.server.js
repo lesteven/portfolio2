@@ -33,13 +33,7 @@ module.exports = {
                 use: {
                     loader: 'css-loader',
                     options: {
-                        plugins:[
-                            'css-modules-transform', {
-                                'generateScopedName':'[hash:8]',
-                                'extensions':['.css']
-        
-                            }
-                        ]
+                        plugins:['css-modules-transform']
                     }
                 }
             } 

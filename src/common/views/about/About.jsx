@@ -6,11 +6,9 @@ import styles from './about.css';
 class About extends Component {
     
     render (){
-    console.log(styles.about);
-
         return (
             <Fragment>
-            <p className= {styles.about}>About Page!</p>
+            <p className= 'about'>About Page!</p>
             </Fragment>
         )
     }
