@@ -12,9 +12,9 @@ class NavBar extends Component {
             <Link to = { e.path } key = { e.path }>{e.title}</Link>
         )
         return (
-            <nav>
+            <nav className='nav-bar'>
                 <a className='menu-icon'><img /> </a>
-                { links }
+                <span className='links'>{ links }</span>
             </nav>
         )
     }
