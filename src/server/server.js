@@ -15,6 +15,8 @@ app.use(bodyParser.urlencoded({
 // for parsing json in req.body
 app.use(bodyParser.json());
 
+
+
 // get gzip files
 app.get('*.js', function (req, res, next) {
   req.url = req.url + '.gz';

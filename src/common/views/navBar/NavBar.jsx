@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 import routesOptions from '../../routes.js';
 import { BrowserRouter as Router } from 'react-router-dom';
-
+//import styles from './navBar.css';
 
 class NavBar extends Component {
 
@@ -13,6 +13,7 @@ class NavBar extends Component {
         )
         return (
             <nav>
+                <a className='menu-icon'><img /> </a>
                 { links }
             </nav>
         )

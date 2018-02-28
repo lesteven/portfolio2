@@ -6,12 +6,10 @@ var CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = merge(common, {
     devtool: 'source-map',
-
     plugins: [
         new webpack.DefinePlugin({
               'process.env.NODE_ENV': '"production"'
             }),
-            new webpack.optimize.UglifyJsPlugin(),
             new webpack.optimize.AggressiveMergingPlugin(),
             new CompressionPlugin({
               asset: "[path].gz[query]",

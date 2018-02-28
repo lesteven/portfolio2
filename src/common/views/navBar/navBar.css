@@ -1,0 +1,26 @@
+/* MOBILE VIEW */
+/*
+@media only screen and (min-width:812px) {
+    .menu-icon {
+        
+    }
+    .menu-icon img{
+        content: url('../../../client/images/icons/menu.svg');
+    }
+
+}
+*/
+/* DESKTOP VIEW */
+/*
+@media only screen and (max-width:812px) {
+
+
+
+
+
+}
+*/
+a{
+    color:green
+
+}

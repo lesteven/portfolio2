@@ -13,13 +13,11 @@ function handleRender(req,res)  {
     // create store
     const store = configureStore();
 
-    const url = 'http://localhost:3000/screen'; 
+//    const url = 'http://localhost:3000/screen'; 
 
-//    console.log(store);
     // react router setup
     let foundPath = null;
 
-//    console.log(req.url);
 
     // grab path that matches with req.url along with component    
     let { path, component } = routeOptions.routes.find (
@@ -30,8 +28,8 @@ function handleRender(req,res)  {
 
 //    console.log('foundPath', foundPath);
     let context = {};
-
 //    console.log(context); 
+
     // render component to string
     const html = renderToString(
         <Provider store = {store}>
@@ -42,6 +40,7 @@ function handleRender(req,res)  {
     )
     
   //  console.log(context); 
+
     // get redux state
     const finalState = store.getState();
 
