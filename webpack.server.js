@@ -26,7 +26,23 @@ module.exports = {
                         plugins: ['transform-class-properties']
                     }
                 }
-            }  
+            },
+            {
+                
+                test: /\.css$/, 
+                use: {
+                    loader: 'css-loader',
+                    options: {
+                        plugins:[
+                            'css-modules-transform', {
+                                'generateScopedName':'[hash:8]',
+                                'extensions':['.css']
+        
+                            }
+                        ]
+                    }
+                }
+            } 
         ]
     },
 /*

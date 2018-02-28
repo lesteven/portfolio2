@@ -3,6 +3,8 @@ var webpack = require('webpack');
 var common = require('./webpack.common.js');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CompressionPlugin = require("compression-webpack-plugin");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 
 module.exports = merge(common, {
     devtool: 'source-map',
@@ -17,7 +19,9 @@ module.exports = merge(common, {
               test: /\.js$|\.css$|\.html$/,
               threshold: 10240,
               minRatio: 0.8
-            })
+            }),
+
+  //      new ExtractTextPlugin('styles.css')
     ]
 
 });

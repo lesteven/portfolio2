@@ -60,6 +60,7 @@ function renderFullPage(html, preloadedState) {
                     content="width=device-width, initial-scale=1">
                 <meta charset = "UTF-8">
                 <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+                <link rel='stylesheet' href="/styles.css"/>
             </head>
             <body>
                 <div id="root">${html}</div>
