@@ -1,5 +1,7 @@
 const updateView = 'app/view/UPDATE_SCREEN_SIZE';
-  
+const toggleNav = 'app/view/TOGGLE_NAV';
+
+
 // action creator
 export const updateScreenSize = (size) => {
     return {
@@ -7,7 +9,12 @@ export const updateScreenSize = (size) => {
       screenSize: size
     }
 }
-
+export const toggleLinks = () => {
+    console.log('toggle');
+    return {
+        type : toggleNav
+    }
+}
 // initial state
 const initialState = {
     screenSize: typeof window === 'object'? window.innerWidth: null
@@ -17,14 +24,19 @@ const initialState = {
 //reducer
 export const view = (state = initialState, action) => {
     switch(action.type) {
-      case updateView:
-          return {
+        case updateView:
+            return {
                 ...state,
                 screenSize: action.screenSize,
                 showBlock: showBlock(action.screenSize),
                 showFlex: showFlex(action.screenSize)
-          }
-      default:
+            }
+        case toggleNav:
+            return {
+                ...state,
+                showFlex: toggleFlex(state.screenSize, state.showFlex)
+            }
+        default:
           return state;
     }
 }

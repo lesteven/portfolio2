@@ -14,12 +14,19 @@ body {
 
 }
 
-
-/* MOBILE VIEW */
+.links a {
+    color:white;
+    text-decoration:none;
+}
 
 .nav-bar > .links {
 }
+
+
+/* MOBILE VIEW */
+
 @media only screen and (max-width:812px) {
+    /* menu icon appears on mobile only */
     .menu-icon {
         cursor:pointer; 
     }
@@ -27,8 +34,24 @@ body {
         content: url('./menu.svg');
         height: 8vh;
     }
-    .nav-bar > .links {
-        display:none;
+
+    /* font size */
+    a {
+        font-size: calc(21px + 1vw);
+    }
+    .links {
+        position:absolute;
+        width:33%;
+        flex-direction:column;
+        text-align:center;
+        top:9vh; 
+        right:0;
+        background-color:#074054;
+        margin:0;
+    }
+    .links a {
+        padding:2vh;
+
     }
 }
 
@@ -39,10 +62,23 @@ body {
 /* DESKTOP VIEW */
 
 @media only screen and (min-width:812px) {
-
-
-
-
-
+    .links {
+        width:25%;
+        justify-content:space-around;
+    }
+    /* font size */
+    a {
+        font-size: calc(21px + .4vw);
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
