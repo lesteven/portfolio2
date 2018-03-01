@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './about.css';
-//const styles = require('./about.css');
+//import sharedStyles from '../sharedCss/sharedCss.css';
 
 
 class About extends Component {

@@ -1,17 +1,11 @@
 /* style for mobile and desktop */
-body {
-    padding:0;
-    margin:0;
+.nav-wrapper {
+    background-color:#074054;
 }
 .nav-bar {
     display:flex;
     justify-content:flex-end;
-    padding:1% 2%;
     background-color:#074054;
-}
-
-.nav-bar > .menu-icon {
-
 }
 
 .links a {
@@ -27,7 +21,7 @@ body {
 
 @media only screen and (max-width:812px) {
     .nav-bar {
-        padding:1% 2%;
+        padding:.5% 2%;
     }
     /* menu icon appears on mobile only */
     .menu-icon {
@@ -76,7 +70,7 @@ body {
         font-size: calc(21px + .4vw);
     }
     .nav-bar {
-        padding:2%;
+        padding:1.5% 0%;
     }
 }
 

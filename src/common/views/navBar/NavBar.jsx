@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import styles from './navBar.css';
 import { connect } from 'react-redux';
 import { toggleLinks } from '../../reduxModules/viewModule.js';
-
+import sharedStyles from '../sharedCss/sharedCss.css';
 
 class NavBar extends Component {
 
@@ -19,12 +19,14 @@ class NavBar extends Component {
                 {e.title}</Link>
         )
         return (
-            <nav className='nav-bar'>
-                <a className='menu-icon' onClick = {toggleLinks}>
-                    <img /> </a>
-                <span className='links' style={{display:showFlex}}>
-                    { links }</span>
-            </nav>
+            <div className='nav-wrapper'>
+                <nav className='nav-bar max-width'>
+                    <a className='menu-icon' onClick = {toggleLinks}>
+                        <img /> </a>
+                    <span className='links' style={{display:showFlex}}>
+                        { links }</span>
+                </nav>
+            </div>
         )
     }
 }

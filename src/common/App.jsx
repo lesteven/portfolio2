@@ -6,6 +6,8 @@ import NavBar from './views/navBar/NavBar.jsx';
 import routesOptions from './routes.js';
 import { Route, Link, Switch, withRouter } from 'react-router-dom';
 import { postData } from './reduxModules/fetchThunk';
+import styles from './views/sharedCss/sharedCss.css';
+
 
 
 class App extends Component {
@@ -32,9 +34,11 @@ class App extends Component {
         return (
             <Fragment>
                 <NavBar />
-                <Switch>
-                    { reactRoutes }
-                </Switch>
+                <div className='max-width top-pad'>
+                    <Switch>
+                        { reactRoutes }
+                    </Switch>
+                </div>
             </Fragment>
         )
     }

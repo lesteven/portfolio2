@@ -17,7 +17,7 @@ class Home extends Component {
                     <p> Node, Express </p>
                     <p> MongoDB, Mongoose </p>
                 </section>
-                <section className='contact'>
+                <section className='top-pad'>
                     <h1> Contact </h1>
                     <p> Email: le_steven@outlook.com </p>
                 </section>
