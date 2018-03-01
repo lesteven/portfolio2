@@ -11,14 +11,16 @@ class NavBar extends Component {
 
 
     render() {
+    const { toggleLinks } = this.props;
     const { showFlex } = this.props.view;
 //    console.log(showFlex);
         const links = routesOptions.routes.map (e =>
-            <Link to = { e.path } key = { e.path }>{e.title}</Link>
+            <Link to = { e.path } key = { e.path } onClick = {toggleLinks}>
+                {e.title}</Link>
         )
         return (
             <nav className='nav-bar'>
-                <a className='menu-icon' onClick = {this.props.toggleLinks}>
+                <a className='menu-icon' onClick = {toggleLinks}>
                     <img /> </a>
                 <span className='links' style={{display:showFlex}}>
                     { links }</span>

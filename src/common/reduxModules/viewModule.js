@@ -10,7 +10,6 @@ export const updateScreenSize = (size) => {
     }
 }
 export const toggleLinks = () => {
-    console.log('toggle');
     return {
         type : toggleNav
     }

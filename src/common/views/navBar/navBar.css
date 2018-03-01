@@ -26,6 +26,9 @@ body {
 /* MOBILE VIEW */
 
 @media only screen and (max-width:812px) {
+    .nav-bar {
+        padding:1% 2%;
+    }
     /* menu icon appears on mobile only */
     .menu-icon {
         cursor:pointer; 
@@ -40,6 +43,7 @@ body {
         font-size: calc(21px + 1vw);
     }
     .links {
+        display:none;
         position:absolute;
         width:33%;
         flex-direction:column;
@@ -65,10 +69,14 @@ body {
     .links {
         width:25%;
         justify-content:space-around;
+        display:flex;
     }
     /* font size */
     a {
         font-size: calc(21px + .4vw);
+    }
+    .nav-bar {
+        padding:2%;
     }
 }
 
