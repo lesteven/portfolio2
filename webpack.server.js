@@ -36,7 +36,11 @@ module.exports = {
                         plugins:['css-modules-transform']
                     }
                 }
-            } 
+            }, 
+            {
+                test: /\.(png|svg|jpg|gif)$/, 
+                use: ['file-loader']
+            },
         ]
     },
 /*
