@@ -5,3 +5,21 @@
     padding-top:5vh;
 
 }
+.profile {
+    display:flex;
+    padding-top:10vh;
+}
+.profile div {
+}
+.skill-level {
+    width:40vw;
+    height:40vh;
+    position:relative;
+}
+.photo {
+    margin: auto;
+}
+.photo img {
+    content: url('./profile.jpg');
+    max-width:300px;
+}
