@@ -39,9 +39,10 @@
 
 /*****************  icons  *********************************/
 .icons {
-    padding-top:5vh;
+    padding:5vh;
     height: 30vh;
     display:flex;
+    max-height:200px;
 }
 
 .icons div {
@@ -95,10 +96,12 @@
     .li-icon img {
         content: url('./icons/liIcon.svg');
         height:15vh;
+        max-height:100px;
     }
     .gh-icon img {
         content: url('./icons/ghicon.svg');
         height:15vh;
+        max-height:100px;
     }
     /***************  radar chart ***************************/
     .skill-level {
@@ -106,6 +109,10 @@
         height:40vh;
         position:relative;
         max-width:600px;
+    }
+    /****************  photo and radar wrap *****************/
+    .profile {
+        max-height:400px;
     }
 }
 
