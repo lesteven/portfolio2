@@ -6,24 +6,17 @@
 
 }
 
-/* photo and radar wrap */
+/****************  photo and radar wrap *****************/
 .profile {
     display:flex;
-    padding-top:5vh;
+    padding-top:8vh;
 }
 .profile div {
     flex:1;
 }
 
-/* radar chart */
-.skill-level {
-    width:40vw;
-    height:40vh;
-    position:relative;
-    max-width:600px;
-}
 
-/* photo */
+/****************  photo  *********************************/
 .photo {
 }
 .img-wrap {
@@ -36,7 +29,7 @@
     max-width:250px;
 }
 
-/* title */
+/*****************  title  *********************************/
 .home-title {
     text-align:center;
 }   
@@ -44,7 +37,18 @@
     color:#074054;
 }
 
-/* MOBILE VIEW */
+/*****************  icons  *********************************/
+.icons {
+    padding-top:5vh;
+    height: 30vh;
+    display:flex;
+}
+
+.icons div {
+    cursor:pointer;
+}
+
+/************************  MOBILE VIEW  **********************/
 @media only screen and (max-width:812px) {
     .profile {
         flex-direction:column-reverse;
@@ -54,9 +58,61 @@
         padding-top:5vh;
         margin:auto;
     }
+    /*****************  icons  *********************************/
+    .icons div {
+        padding:5vh;
+    }
+    .li-icon img {
+        content: url('./icons/liIcon.svg');
+        height:10vh;
+    }
+    .gh-icon img {
+        content: url('./icons/ghicon.svg');
+        height:10vh;
+    }
+    .icons {
+        justify-content:center;
+    }
+    /***************  radar chart ***************************/
+    .skill-level {
+        width:80vw;
+        height:40vh;
+        position:relative;
+        max-width:600px;
+    }
 }
 
-/* DESKTOP VIEW */
+/*******************  DESKTOP VIEW  ************************/
 @media only screen and (min-width:812px) {
-
+    /*****************  icons  *********************************/
+    .icons {
+        justify-content:center;
+        align-items:center;
+    }
+    .icons div {
+        padding:2vh 5vh;
+    }
+    .li-icon img {
+        content: url('./icons/liIcon.svg');
+        height:15vh;
+    }
+    .gh-icon img {
+        content: url('./icons/ghicon.svg');
+        height:15vh;
+    }
+    /***************  radar chart ***************************/
+    .skill-level {
+        width:40vw;
+        height:40vh;
+        position:relative;
+        max-width:600px;
+    }
 }
+
+
+
+
+
+
+
+
