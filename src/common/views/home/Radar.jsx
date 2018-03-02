@@ -5,11 +5,11 @@ import Chart from 'chart.js';
 class Radar extends Component {
     componentDidMount() {
         let data = {
-            labels: ['React', 'Redux','MongoDB', 'Express',
-                    'Ability to Learn'],
+            labels: ['React', 'Redux','MongoDB', 'Ability to Learn',
+                    'Express', 'Webpack'],
             datasets: [{
                 label: 'Power Level',
-                data: [8000,7000,6000,7000,10000],
+                data: [8000,7000,6000,10000,7000,5000],
                 backgroundColor: 'rgba(6,64,87,.2)',
                 pointBackgroundColor:'rgba(6,64,84,1)',
                 borderColor: 'rgba(179,181,198,1)',

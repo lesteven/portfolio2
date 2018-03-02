@@ -5,21 +5,58 @@
     padding-top:5vh;
 
 }
+
+/* photo and radar wrap */
 .profile {
     display:flex;
-    padding-top:10vh;
+    padding-top:5vh;
 }
 .profile div {
+    flex:1;
 }
+
+/* radar chart */
 .skill-level {
     width:40vw;
     height:40vh;
     position:relative;
+    max-width:600px;
 }
+
+/* photo */
 .photo {
-    margin: auto;
+}
+.img-wrap {
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .photo img {
     content: url('./profile.jpg');
-    max-width:300px;
+    max-width:250px;
+}
+
+/* title */
+.home-title {
+    text-align:center;
+}   
+.home-title p {
+    color:#074054;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width:812px) {
+    .profile {
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+    .skill-level {
+        padding-top:5vh;
+        margin:auto;
+    }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width:812px) {
+
 }
