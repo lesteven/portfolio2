@@ -1,0 +1,9 @@
+.project {
+    display:flex;
+}
+.project-title {
+    flex:1;
+}
+.project-descrip {
+    flex:3;
+}

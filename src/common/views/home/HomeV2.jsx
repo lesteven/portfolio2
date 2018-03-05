@@ -8,10 +8,10 @@ class HomeV2 extends Component {
         return (
             <Fragment>
                 <header className='home-title'>
-                <h1>
-                    Power Level: Entry Level Developer
-                </h1> 
-                <p>Over 9000!</p>
+                    <h1>
+                        Power Level: Entry Level Developer
+                    </h1> 
+                    <p>Over 9000!</p>
                 </header>
                 <section className='profile'>
                     <div className='skill-level'>
