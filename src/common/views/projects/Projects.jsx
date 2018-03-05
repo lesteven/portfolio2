@@ -8,8 +8,11 @@ class Projects extends Component {
         let map = list.map( e => {
             return (
             <div key ={ e.title } className='project'>
-                <div className='project-title'> { e.title }</div>
-                <div className='project-descrip'> { e.description }</div>
+                <div className='project-title'> 
+                    <h3 className='center'> { e.title } </h3>
+                    <div className='center'><img src= {e.photo}/></div>
+                </div>
+                <div className='project-descrip'> { e.description() }</div>
             </div>
             )
         })

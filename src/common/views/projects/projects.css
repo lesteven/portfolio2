@@ -1,9 +1,30 @@
+.projects-wrapper {
+    padding-bottom:5vh;
+}
+.projects {
+}
 .project {
     display:flex;
+}
+.project > div {
+    padding:3vh;
 }
 .project-title {
     flex:1;
 }
 .project-descrip {
+    flex:1;
+}
+.tech {
+    display:flex;
+    padding-bottom:2vh;
+}
+.tech div:nth-child(1) {
+    flex:1;
+}
+.tech div:nth-child(2) {
     flex:3;
+}
+.tech p {
+    margin:0;
 }
