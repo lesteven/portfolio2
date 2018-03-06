@@ -1,62 +1,62 @@
 import React, { Component, Fragment } from 'react';
+import Template from './Template.jsx';
 
-
-const  Volcano = () => {
+// Volcano production info
+const VolcFE = () => {
     return (
         <Fragment>
-            <h3 className='center'> Multimedia Production Website </h3>
-            <div className='tech'>
-                <div>
-                    <p>Front end:</p>   
-                </div>
-                <div>
-                    <li>React, Redux, React Router</li>
-                    <li>Draft.js used as a rich text editor to create blogs</li>
-                    <li>Passport used for user authentication</li>
-                    <li>SendGrid used as email system</li>
-                    <li>Mobile friendly design</li>
-                    <li>File system storage</li>
-                </div>
-            </div>
-            <div className='tech'>
-                <div>
-                    <p>Back end:</p>
-                </div>
-                <div>
-                    <li> Express, MongoDb</li>
-                </div>
-            </div>
-            <div className='tech'>
-                <div>
-                    <p>Server Hosting:</p>
-                </div>
-                <div>
-                    <li>Digital Ocean VPS</li>
-                    <li>Implemented TLS</li>
-                </div>
-            </div>
+            <li>React, Redux, React Router</li>
+            <li>Draft.js used as a rich text editor to create blogs</li>
+            <li>Passport used for user authentication</li>
+            <li>SendGrid used as email system</li>
+            <li>Mobile friendly design</li>
+            <li>File system storage</li>
+        </Fragment>
+    )
+}
+const VolcBE = () => {
+    return (
+        <li> Express, MongoDb</li>
+    )
+}
+const VolcH = () => {
+    return (
+        <Fragment>
+            <li>Digital Ocean VPS</li>
+            <li>Implemented TLS</li>
         </Fragment>
     )
 }
 
-
+// D3 info
+const D3FE = () => {
+    return (
+        <Fragment>
+            <li>Bar charts</li>
+            <li>Heat map</li>
+            <li>World map</li>
+            <li>Scatter plot</li>
+        </Fragment>
+    )
+}
+const D3BE = () => {
+    return (
+        <li> Not applicable </li>
+    )
+}
+const D3H = () => {
+    return (
+        <li>GitHub pages</li>
+    )
+}
 
 
 const projects = [
     { title: 'Volcano Production', photo: 'https://via.placeholder.com/400x200',
-         description: Volcano 
+         description: Template(VolcFE, VolcBE, VolcH) 
     }, 
-    { title: 'V2', photo: 'https://via.placeholder.com/400x200', 
-        description: Volcano 
-    }, 
-    { title: 'V3', photo: 'https://via.placeholder.com/400x200', 
-        description: Volcano 
-    }, 
-    { title: 'V4', photo: 'https://via.placeholder.com/400x200', 
-        description: Volcano 
-    }, 
-    { title: 'V5', photo: 'https://via.placeholder.com/400x200', 
-        description: Volcano 
+    { title: 'D3 Projects', photo: 'https://via.placeholder.com/400x200', 
+        description: Template(D3FE, D3BE, D3H) 
     }, 
 ]
 
