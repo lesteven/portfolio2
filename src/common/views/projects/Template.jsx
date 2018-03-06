@@ -2,10 +2,10 @@ import React, { Component, Fragment } from 'react';
 
 
 
-const Template = (frontEnd, backEnd, hosting) => {
+const Template = (title,frontEnd, backEnd, hosting) => {
     return (
         <Fragment>
-            <h3 className='center'> Multimedia Production Website </h3>
+            <h3 className='center'> { title } </h3>
             <div className='tech'>
                 <div>
                     <p>Front end:</p>   

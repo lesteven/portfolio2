@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Template from './Template.jsx';
 
 // Volcano production info
+const VolcT = 'Multimedia Production Website';
 const VolcFE = () => {
     return (
         <Fragment>
@@ -29,6 +30,7 @@ const VolcH = () => {
 }
 
 // D3 info
+const D3T = 'Some D3 Projects';
 const D3FE = () => {
     return (
         <Fragment>
@@ -53,10 +55,10 @@ const D3H = () => {
 
 const projects = [
     { title: 'Volcano Production', photo: 'https://via.placeholder.com/400x200',
-         description: Template(VolcFE, VolcBE, VolcH) 
+         description: Template(VolcT,VolcFE, VolcBE, VolcH) 
     }, 
-    { title: 'D3 Projects', photo: 'https://via.placeholder.com/400x200', 
-        description: Template(D3FE, D3BE, D3H) 
+    { title: 'D3', photo: 'https://via.placeholder.com/400x200', 
+        description: Template(D3T, D3FE, D3BE, D3H) 
     }, 
 ]
 
