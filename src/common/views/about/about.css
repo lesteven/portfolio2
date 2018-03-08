@@ -1,3 +1,44 @@
 .about {
     text-align:center;
 }
+.about-v2 {
+    display:flex;
+}
+.about-v2 div:nth-child(1) {
+    flex:3;
+    padding:0vh 5vh;
+}
+.about-v2 div:nth-child(2) {
+    flex:2;
+    text-align:center;
+}
+.about-v2 h3 {
+    padding:2vh;
+}
+.about-image img {
+    content: url('./about.jpg');
+    height:70vh;
+    max-height:400px;
+}
+.about-descrip {
+    padding:8vh;
+}
+
+
+/* DESKTOP VIEW */
+
+@media only screen and (min-width:812px) {
+}
+
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width:812px) {
+    .about-v2 {
+        flex-direction:column;
+    }
+    .about-image {
+        padding:2vh;
+    }
+}
+

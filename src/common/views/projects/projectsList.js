@@ -54,12 +54,16 @@ const D3H = () => {
 
 
 const projects = [
-    { title: 'Volcano Production', photo: 'https://via.placeholder.com/400x200',
-         description: Template(VolcT,VolcFE, VolcBE, VolcH) 
+    { 
+        title: 'Volcano Production', 
+        photo: 'https://via.placeholder.com/400x200',
+        description: Template(VolcT,VolcFE, VolcBE, VolcH) 
     }, 
-    { title: 'D3', photo: 'https://via.placeholder.com/400x200', 
+    { 
+        title: 'D3', 
+        photo: 'https://via.placeholder.com/400x200', 
         description: Template(D3T, D3FE, D3BE, D3H) 
-    }, 
+    },
 ]
 
 

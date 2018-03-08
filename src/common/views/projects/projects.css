@@ -6,12 +6,14 @@
 }
 .project {
     display:flex;
+    margin-bottom:5vh;
 }
 .project > div {
     padding:3vh;
 }
 .project-title {
     flex:1;
+    color:#074054;
 }
 .project-descrip {
     flex:1;
@@ -28,4 +30,26 @@
 }
 .tech p {
     margin:0;
+}
+/* DESKTOP VIEW */
+
+@media only screen and (min-width:812px) {
+
+}
+
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width:812px) {
+    .projects {
+        margin:5vh;
+    }
+    .project {
+        flex-direction:column;
+        border:1px groove #f1f1f1;
+    }
+    .project-descrip {
+        margin:auto;
+        width:70vw;
+    }
 }
