@@ -24,8 +24,16 @@ class HomeV2 extends Component {
                     </div>
                 </section>
                 <section className='icons'>
-                    <div className='li-icon'><img/></div>
-                    <div className='gh-icon'><img/></div>
+                    <div className='li-icon'>
+                        <a href='https://www.linkedin.com/in/stevennle/'>
+                            <img/>
+                        </a>
+                    </div>
+                    <div className='gh-icon'>
+                        <a href = 'https://github.com/lesteven'>
+                            <img/>
+                        </a>
+                    </div>
                 </section>
             </Fragment>
         )
