@@ -12,7 +12,8 @@ class AboutV2 extends Component {
                     <h3>A little bit about me...</h3>
                     <p> &emsp;
                         Hello! Welcome to my website, my name is Steven and I
-                        am a programmer whose main focus is on web development.
+                        am a programmer whose main focus right now is on 
+                        web development.
                         I mostly do front-end work in <b>react</b> and 
                         <b> redux</b>, but
                         I am also familiar with back-end work using 
@@ -22,9 +23,10 @@ class AboutV2 extends Component {
                         I started down this path in November 2016 after
                         graduating from college with an unrelated degree.
                         I found the CS field to be very fascinating, so I spend
-                        a lot of my free time to hone this craft. Although 
+                        most of my time honing this craft. Although 
                         it can be difficult at 
-                        times, I find it to be very rewarding. At the moment,
+                        times, it is also very rewarding.  
+                        At the moment,
                         my emphasis is on web development, but I am also open
                         to working on apps, softwares and dApps in the future.
                     </p>
