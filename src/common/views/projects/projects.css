@@ -34,11 +34,13 @@
 
 
 
-
 /* DESKTOP VIEW */
 
 @media only screen and (min-width:812px) {
 
+    .proj-img img {
+        width:100%;
+    }
 }
 
 
@@ -57,3 +59,17 @@
         width:70vw;
     }
 }
+
+
+@media only screen and (min-width:600px) and (max-width:812px) {
+    .proj-img img {
+        width:75%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .proj-img img {
+        width:100%;
+    }
+}
+
+

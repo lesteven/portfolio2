@@ -71,7 +71,7 @@ const projects = [
     }, 
     { 
         title: 'D3', 
-        photo: '/d3p.png',
+        photo: '/d3p.jpg',
         description: Template(D3T, D3FE, D3BE, D3H) 
     },
 ]
