@@ -1,18 +1,22 @@
 import React, { Component, Fragment } from 'react';
 import Template from './Template.jsx';
-//import D3pix from './d3p.png';
-/*
-let d3pix = null;
-
-if (typeof window !== undefined) {
-    d3pix = require('./d3p.png');
-}
-*/
 
 
 
 // Volcano production info
 const VolcT = 'Multimedia Production Website';
+/*
+const VolcL = () => {
+    return (
+        <a href='https://www.volcanoboyz.com'> Volcano Production </a>
+    )
+}
+*/
+const VolcL = () => {
+    return (
+        <p>Coming soon!</p>
+    )    
+}
 const VolcFE = () => {
     return (
         <Fragment>
@@ -30,6 +34,7 @@ const VolcBE = () => {
         <li> Express, MongoDb</li>
     )
 }
+/*
 const VolcH = () => {
     return (
         <Fragment>
@@ -38,16 +43,27 @@ const VolcH = () => {
         </Fragment>
     )
 }
+*/
+const VolcH = 'Digital Ocean VPS';
 
 // D3 info
 const D3T = 'Some D3 Projects';
+
+const D3L = () => {
+    return (
+        <Fragment>
+            <a href='https://lesteven.github.io/bar-chart'> Bar Graph, </a>
+            <a href='https://lesteven.github.io/scatterplot'> Scatter Plot, </a>
+            <a href='https://lesteven.github.io/heatmap'> Heat Map, </a>
+            <a href='https://lesteven.github.io/globe'> World Map </a>
+        </Fragment>
+    )
+}
 const D3FE = () => {
     return (
         <Fragment>
-            <li>Bar charts</li>
-            <li>Heat map</li>
-            <li>World map</li>
-            <li>Scatter plot</li>
+            <li>D3 libary used to create charts and graphs</li>
+            <li>Data provided by freecodecamp.com</li>
         </Fragment>
     )
 }
@@ -56,23 +72,25 @@ const D3BE = () => {
         <li> Not applicable </li>
     )
 }
+/*
 const D3H = () => {
     return (
         <li>GitHub pages</li>
     )
 }
-
+*/
+const D3H = 'Github pages';
 
 const projects = [
     { 
         title: 'Volcano Production', 
         photo: 'https://via.placeholder.com/400x200',
-        description: Template(VolcT,VolcFE, VolcBE, VolcH) 
+        description: Template(VolcT, VolcL, VolcFE, VolcBE, VolcH) 
     }, 
     { 
         title: 'D3', 
         photo: '/d3p.jpg',
-        description: Template(D3T, D3FE, D3BE, D3H) 
+        description: Template(D3T, D3L, D3FE, D3BE, D3H) 
     },
 ]
 

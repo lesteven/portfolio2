@@ -2,10 +2,18 @@ import React, { Component, Fragment } from 'react';
 
 
 
-const Template = (title,frontEnd, backEnd, hosting) => {
+const Template = (title, link, frontEnd, backEnd, hosting) => {
     return (
         <Fragment>
             <h3 className='center'> { title } </h3>
+            <div className='tech'>
+                <div>
+                    <p> Link: </p>
+                </div>
+                <div>
+                    { link() }
+                </div>
+            </div>
             <div className='tech'>
                 <div>
                     <p>Front end:</p>   
@@ -27,7 +35,7 @@ const Template = (title,frontEnd, backEnd, hosting) => {
                     <p>Server Hosting:</p>
                 </div>
                 <div>
-                    { hosting() }
+                    <li> { hosting } </li>
                 </div>
             </div>
         </Fragment>

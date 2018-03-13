@@ -6,7 +6,7 @@ body {
     max-width:960px;
 }
 .top-pad {
-    padding-top:5vh;
+    padding:5vh 0vh;
 }
 .center {
     text-align:center;

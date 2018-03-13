@@ -31,7 +31,10 @@
 .tech p {
     margin:0;
 }
-
+.tech a {
+    text-decoration:none;
+    color:#074054;
+}
 
 
 /* DESKTOP VIEW */
