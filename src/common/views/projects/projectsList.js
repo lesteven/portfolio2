@@ -1,5 +1,15 @@
 import React, { Component, Fragment } from 'react';
 import Template from './Template.jsx';
+//import D3pix from './d3p.png';
+/*
+let d3pix = null;
+
+if (typeof window !== undefined) {
+    d3pix = require('./d3p.png');
+}
+*/
+
+
 
 // Volcano production info
 const VolcT = 'Multimedia Production Website';
@@ -61,7 +71,7 @@ const projects = [
     }, 
     { 
         title: 'D3', 
-        photo: 'https://via.placeholder.com/400x200', 
+        photo: '/d3p.png',
         description: Template(D3T, D3FE, D3BE, D3H) 
     },
 ]

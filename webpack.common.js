@@ -18,6 +18,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
+                        babelrc: false,
                         presets: ['react','env','stage-3'],
                         plugins: ['transform-class-properties']
                     }

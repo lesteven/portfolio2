@@ -27,6 +27,8 @@ app.get('*.js', function (req, res, next) {
 
 // serve js files
 app.use(express.static('dist'));
+app.use(express.static('imgs'));
+
 
 // routers
 import screenRouter from './routes/screenRouter';

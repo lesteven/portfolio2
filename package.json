@@ -6,7 +6,7 @@
   "scripts": {
     "starts": "webpack-dev-server",
     "start": "webpack-dev-server --hot --config webpack.clientdev.js --mode development",
-    "server": "nodemon src/server/server.js --exec babel-node --plugins css-modules-transform",
+    "server": "nodemon src/server/server.js --exec babel-node",
     "build": "webpack --config webpack.clientprod.js --mode production && webpack --config webpack.server.js --mode production"
   },
   "keywords": [],
