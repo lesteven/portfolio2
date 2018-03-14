@@ -84,7 +84,7 @@ const D3H = 'Github pages';
 const projects = [
     { 
         title: 'Volcano Production', 
-        photo: '/vbp.jpg',
+        photo: '/vbp.jp',
         description: Template(VolcT, VolcL, VolcFE, VolcBE, VolcH) 
     }, 
     { 

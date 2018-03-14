@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import styles from './home.css';
-import Radar from './Radar.jsx';
+import SkillLevel from './SkillLevel.jsx';
+
 
 class HomeV2 extends Component {
 
@@ -15,7 +16,38 @@ class HomeV2 extends Component {
                 </header>
                 <section className='profile'>
                     <div className='skill-level'>
-                        <Radar/>
+                        <h3>Languages </h3>
+                        <SkillLevel 
+                            title = 'Javascript'
+                            descrip = {[
+                                'Proficient',
+                                `Able to build full stack js apps
+                                 (SPAs and Isomorphic Apps)`
+                            ]}
+                        />
+                        <SkillLevel
+                            title = 'Java'
+                            descrip = {[
+                                'Competent',
+                                `Able to solve algorithmic problems`
+                            ]} 
+                        />
+                        <h3> Web Dev </h3>
+                        <SkillLevel
+                            title = 'Front-End'
+                            descrip = {[
+                                'Proficient',
+                                `Tech: react, redux, react router, webpack`
+                            ]}
+                        />
+                        <SkillLevel
+                            title = 'Back-End'
+                            descrip = {[
+                                'Compotent',
+                                `Tech: express, mongodb, mongoose, digital
+                                    ocean`
+                            ]}
+                        />
                     </div>
                     <div className='photo'>
                         <div className='img-wrap'>

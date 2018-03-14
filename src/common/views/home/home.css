@@ -6,23 +6,24 @@
 
 }
 
-/****************  photo and radar wrap *****************/
+/****************  photo and skill level *****************/
 .profile {
     display:flex;
-    padding-top:8vh;
 }
 .profile div {
     flex:1;
 }
-
-
+.skill-level h3 {
+    text-align:center;
+}
 /****************  photo  *********************************/
 .photo {
-}
-.img-wrap {
     display:flex;
     justify-content:center;
     align-items:center;
+}
+.img-wrap {
+    text-align:center;
 }
 .photo img {
     content: url('./profile.jpg');
@@ -54,7 +55,7 @@
 @media only screen and (max-width:812px) {
     .profile {
         flex-direction:column-reverse;
-        text-align:center;
+        padding:4vh;
     }
     .skill-level {
         padding-top:5vh;
@@ -74,13 +75,6 @@
     }
     .icons {
         justify-content:center;
-    }
-    /***************  radar chart ***************************/
-    .skill-level {
-        width:80vw;
-        height:40vh;
-        position:relative;
-        max-width:600px;
     }
 }
 
@@ -104,16 +98,10 @@
         height:15vh;
         max-height:100px;
     }
-    /***************  radar chart ***************************/
-    .skill-level {
-        width:40vw;
-        height:40vh;
-        position:relative;
-        max-width:600px;
-    }
     /****************  photo and radar wrap *****************/
     .profile {
         max-height:400px;
+        padding:8vh;
     }
 }
 
