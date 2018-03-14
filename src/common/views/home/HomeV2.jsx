@@ -21,8 +21,8 @@ class HomeV2 extends Component {
                             title = 'Javascript'
                             descrip = {[
                                 'Proficient',
-                                `Able to build full stack js apps
-                                 (SPAs and Isomorphic Apps)`
+                                `Able to build full stack js apps 
+                                  (SPAs and Isomorphic/Universal Apps)`
                             ]}
                         />
                         <SkillLevel
@@ -43,7 +43,7 @@ class HomeV2 extends Component {
                         <SkillLevel
                             title = 'Back-End'
                             descrip = {[
-                                'Compotent',
+                                'Competent',
                                 `Tech: express, mongodb, mongoose, digital
                                     ocean`
                             ]}
