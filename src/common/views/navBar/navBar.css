@@ -33,7 +33,7 @@
     }
 
     /* font size */
-    a {
+    .nav-bar a {
         font-size: calc(21px + 1vw);
     }
     .links {
