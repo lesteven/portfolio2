@@ -22,6 +22,22 @@ module.exports = merge(common, {
             }),
 
   //      new ExtractTextPlugin('styles.css')
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/, 
+                use: ExtractTextPlugin.extract({
+                    fallback:'style-loader',
+                    use: [
+                        { 
+                            loader: 'css-loader',
+                            options: {minimize:true}
+                        }
+                    ]
+                })
+            }
+        ]
+    },
 
 });

@@ -20,6 +20,10 @@
     height:70vh;
     max-height:400px;
 }
+
+.about-image {
+    padding:5vh;
+}
 .about-descrip {
     padding:8vh;
 }
@@ -36,9 +40,6 @@
 @media only screen and (max-width:812px) {
     .about-v2 {
         flex-direction:column;
-    }
-    .about-image {
-        padding:2vh;
     }
 }
 
