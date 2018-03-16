@@ -50,7 +50,6 @@ class AboutV2 extends Component {
                     This site uses universal react, so it has SEO benefits! 
                     It was created from scratch using react, redux, 
                     and react router.
-                    Chart.js was used to create the radar chart.
                     I used mobile first development in order to achieve a 
                     mobile friendly design.
                 </p>
