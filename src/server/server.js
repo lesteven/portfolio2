@@ -25,6 +25,19 @@ app.get('*.js', function (req, res, next) {
   next();
 });
 
+app.get('*.css', function (req, res, next) {
+  req.url = req.url + '.gz';
+  res.set('Content-Encoding', 'gzip');
+  res.set('Content-Type', 'text/css');
+  next();
+});
+app.get('*.svg', function (req, res, next) {
+  req.url = req.url + '.gz';
+  res.set('Content-Encoding', 'gzip');
+  res.set('Content-Type', 'image/svg+xml');
+  next();
+});
+
 // serve js files
 app.use(express.static('dist'));
 app.use(express.static('imgs'));
