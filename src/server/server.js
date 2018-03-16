@@ -31,6 +31,7 @@ app.get('*.css', function (req, res, next) {
   res.set('Content-Type', 'text/css');
   next();
 });
+
 app.get('*.svg', function (req, res, next) {
   req.url = req.url + '.gz';
   res.set('Content-Encoding', 'gzip');
@@ -57,6 +58,13 @@ import { handleRender } from './ssrFunctions.js';
 
 app.use(handleRender);
 
+// Check mode
+if (app.get('env') === 'development') {
+    console.log('Development mode!');
+}
+else {
+    console.log('Production mode!');
+}
 
 app.listen(port,function(){
 	console.log(`Listening on port ${port}`)
