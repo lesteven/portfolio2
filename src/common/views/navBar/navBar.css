@@ -25,9 +25,9 @@
     }
     /* menu icon appears on mobile only */
     .menu-icon {
+        display:block;
         cursor:pointer; 
     }
-    /* for firefox imgs to appear */
     .menu-icon img {
         content: url('./menu.svg');
         height: 8vh;
@@ -72,6 +72,9 @@
     }
     .nav-bar {
         padding:1.5% 0%;
+    }
+    .menu-icon {
+      display:none;
     }
 }
 
