@@ -3,11 +3,19 @@ require('isomorphic-fetch');
 // action thunk
 
 export function fetchData(url, cb) {
+    console.log('fetchData called');
     return (dispatch) => {
         fetch(url, {credentials: 'same-origin'})
             .then(res => res.json())
+            .catch( err => {
+              console.log('no json data');
+            })
             .then(data => {
-                cb(data)
+              console.log(data);
+              cb(data)
+            })
+            .catch(function(err) {
+              console.log('there was an error', err);
             })
     }
 }

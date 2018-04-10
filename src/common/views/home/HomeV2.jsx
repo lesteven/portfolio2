@@ -51,19 +51,19 @@ class HomeV2 extends Component {
                     </div>
                     <div className='photo'>
                         <div className='img-wrap'>
-                            <img/>
+                            <span></span>
                         </div>
                     </div>
                 </section>
                 <section className='icons'>
                     <div className='li-icon'>
                         <a href='https://www.linkedin.com/in/stevennle/'>
-                            <img/>
+                            <span></span>
                         </a>
                     </div>
                     <div className='gh-icon'>
                         <a href = 'https://github.com/lesteven'>
-                            <img/>
+                            <span></span>
                         </a>
                     </div>
                 </section>
