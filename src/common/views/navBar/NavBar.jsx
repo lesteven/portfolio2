@@ -22,7 +22,7 @@ class NavBar extends Component {
             <div className='nav-wrapper'>
                 <nav className='nav-bar max-width'>
                     <a className='menu-icon' onClick = {toggleLinks}>
-                        <img /> </a>
+                        <img src='./menu.svg'/> </a>
                     <span className='links' style={{display:showFlex}}>
                         { links }</span>
                 </nav>

@@ -28,10 +28,6 @@
         cursor:pointer; 
     }
     /* for firefox imgs to appear */
-    .menu-icon img::after {
-        content: url('./menu.svg');
-        height: 8vh;
-    }
     .menu-icon img {
         content: url('./menu.svg');
         height: 8vh;
