@@ -42,7 +42,7 @@ class AboutV2 extends Component {
                     </p>
                 </div>
                 <div className='about-image'>
-                    <img />
+                    <img src='./about.jpg'/>
                 </div>
             </div>
             <div className='about-descrip center'>

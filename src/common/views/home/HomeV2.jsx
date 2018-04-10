@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import styles from './home.css';
 import SkillLevel from './SkillLevel.jsx';
 
-
 class HomeV2 extends Component {
 
     render (){
@@ -51,19 +50,19 @@ class HomeV2 extends Component {
                     </div>
                     <div className='photo'>
                         <div className='img-wrap'>
-                            <span></span>
+                            <img src = './profile.jpg' />
                         </div>
                     </div>
                 </section>
                 <section className='icons'>
                     <div className='li-icon'>
                         <a href='https://www.linkedin.com/in/stevennle/'>
-                            <span></span>
+                            <img src = './liIcon.svg'/>
                         </a>
                     </div>
                     <div className='gh-icon'>
                         <a href = 'https://github.com/lesteven'>
-                            <span></span>
+                            <img src= '/ghicon.svg' />
                         </a>
                     </div>
                 </section>
